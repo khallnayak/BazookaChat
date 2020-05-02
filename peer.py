@@ -310,7 +310,7 @@ try:
 	seeder_thread_active=True
 except:
 	pass
-#print("SEEDER DONE")
+print("READY")
 while True:
 	try:
 		data,addr=P.recvfrom(1024)
