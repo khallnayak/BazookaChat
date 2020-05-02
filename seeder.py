@@ -129,7 +129,7 @@ while True:
 	sockets=[]
 	try:
 		data,addr=S.recvfrom(1024)
-		#print(data,addr,"IN MAIN",sep="\t")
+		print(data,addr,"IN MAIN",sep="\t")
 		if(addr not in peer_threads.keys()):
 			sockets.append(s.socket(s.AF_INET6,s.SOCK_DGRAM))
 			sockets[-1].setsockopt(s.SOL_SOCKET,s.SO_REUSEADDR,1)
